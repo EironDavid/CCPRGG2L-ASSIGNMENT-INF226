@@ -45,7 +45,7 @@ public class exercise2 {
     static void fixRecipe(String trainee) {
         System.out.print("Enter additional skills:");
         String DrivingSkills = scan.next();
-        System.out.println("Fixing driving skills. Added " + DrivingSkills);
+        System.out.println("Training driving skills. Added " + DrivingSkills);
     }
 
     static void serve(String trainee) {
