@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class exercise2 {
+public class App {
 
     static Scanner scan = new Scanner(System.in);
 
@@ -12,7 +12,7 @@ public class exercise2 {
 
     static void Driving(String trainee) {
 
-        System.out.println("Test Driving");
+        System.out.println("Road Test");
         Skills(trainee);
 
         String feedback = getFeedBack(trainee);
@@ -21,7 +21,7 @@ public class exercise2 {
         if (feedback.equals("no")) {
 
             // Do something to reach the goal
-            fixRecipe(trainee);
+            fixingSkills(trainee);
 
             // Recursive call
             Driving(trainee);
@@ -35,21 +35,21 @@ public class exercise2 {
     }
 
     static String getFeedBack(String trainee) {
-        System.out.println("Is the " + trainee + " Smooth with the driving skills? (Enter \"yes\" or \"no\")");
+        System.out.println("Is the " + trainee + " Smooth with the driving ? (Enter \"yes\" or \"no\")");
 
         String feedback = scan.next();
 
         return feedback;
     }
 
-    static void fixRecipe(String trainee) {
+    static void fixingSkills(String trainee) {
         System.out.print("Enter additional skills:");
         String DrivingSkills = scan.next();
-        System.out.println("Training driving skills. Added " + DrivingSkills);
+        System.out.println("driving skill. Added " + DrivingSkills);
     }
 
     static void serve(String trainee) {
-        System.out.println("Trainee passed ");
+        System.out.println("Trainee can now have certificate ");
     }
 
 }
