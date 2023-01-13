@@ -31,7 +31,7 @@ public class exercise2 {
     }
 
     static void Skills(String trainee) {
-        System.out.println("Driving");
+        System.out.println("Driving.......");
     }
 
     static String getFeedBack(String trainee) {
