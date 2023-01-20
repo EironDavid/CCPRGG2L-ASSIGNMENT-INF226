@@ -1,0 +1,20 @@
+public class weapon {
+
+    int damage;
+    String rarity, name;
+
+    public void addDamage (int additionalDamage) {
+        int newDamage = this.damage + additionalDamage;
+
+        System.out.println("Damage Has Increased from " + this.damage + " to " + newDamage);
+
+        this.damage = newDamage;
+    }
+
+    String weaponInfo(){
+        return this.name + " " + this.rarity;
+    }
+
+
+    }
+     
