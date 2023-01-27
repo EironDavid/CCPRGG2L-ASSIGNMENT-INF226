@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class App {
+
+    public static void main(String[] args) throws Exception {
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.print("Enter current weight in lbs: ");
+        int weight = scan.nextInt();
+
+        if (weight > 150) {
+            loseWeight(weight, scan);
+        } else {
+            System.out.println("Current weight must be greater than 150 lbs!");
+        }
+        scan.close();
+    }
+
+    static void loseWeight(int currentWeight, Scanner scan) {
+
+        System.out.println("Eating right!");
+        System.out.println("Doing exercises!");
+
+        while (currentWeight > 150) {
+            currentWeight = checkWeight(currentWeight);
+            currentWeight = fixDietandExercise(currentWeight, scan);
+            System.out.println("Fixing Diet and Exercise!");
+        } 
+        System.out.println("I have reached my target weight!");
+    }
+
+    static int checkWeight(int weight) {
+        System.out.printf("My current weight is: %d lbs%n", weight);
+        return weight;
+    }
+
+    static int fixDietandExercise(int weight, Scanner scan) {
+
+        System.out.print("Enter weight lost in lbs: ");
+        int weightLost = scan.nextInt();
+        if (weightLost <= 0) {
+            System.out.println("Weight lost must be a positive value!");
+            return weight;
+        }
+        return weight - weightLost;
+    }
+}
