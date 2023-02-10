@@ -1,0 +1,14 @@
+public class exercise5 {
+    public static void main(String[] args) throws Exception {
+
+        Person me = new Person();
+
+        me.setName("Eiron");
+    
+        System.out.println(me.getName());
+    //son
+    son myself = new son();
+    myself.showSurname();
+        
+    }
+}
