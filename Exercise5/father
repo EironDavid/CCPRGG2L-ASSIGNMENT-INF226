@@ -1,0 +1,7 @@
+public class father {
+
+    protected String surname =  "David";
+    protected void showSurname() {
+        System.out.println( "My Family name is: " + surname);
+    }
+}
